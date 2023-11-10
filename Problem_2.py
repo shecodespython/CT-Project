@@ -1,13 +1,12 @@
 import streamlit as st
-import subprocess
+
 
 st.set_page_config(
-    page_title="Finance Calculator - Theory",
+    page_title="Finance Calculator - Problems",
     page_icon="💰",
 )
 
-
-st.title("📖 Theory Page")
+st.title("📝 Problem 2")
 
 
 with open('main_style.css') as f:
