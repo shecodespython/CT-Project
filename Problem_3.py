@@ -10,13 +10,13 @@ st.set_page_config(
 
 st.title("📝 Topic 3 - Net Present Value Alternatives")
 
-#
-# with open('main_style.css') as f:
+#Style
+# with open('problems_style.css') as f:
 #     css = f.read()
 # st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
 #Problem 1 - Return on Book Value/Book Value Return
-def Topic1Problem1():
+def Topic3Problem1():
     st.subheader('1) Return on Book Value (ROBV)')
     st.markdown("Calculate the return on book value when given the average expected profit "
                 "(after amortization and after-tax) from the investment's implementation "
@@ -36,10 +36,10 @@ def Topic1Problem1():
 
     st.write(res)
 
-Topic1Problem1()
+Topic3Problem1()
 
 #Problem 2 - Payback Period
-def Topic1Problem2():
+def Topic3Problem2():
     st.subheader('2) Payback Period (PBP/PP)')
     st.markdown("Calculate the payback period for the investment to recover its initial investment"
                 " given the initial investment value and annual cash flow.")
@@ -58,10 +58,10 @@ def Topic1Problem2():
 
     st.write(res)
 
-Topic1Problem2()
+Topic3Problem2()
 
 #Problem 3 - Profitability Index
-def Topic1Problem3():
+def Topic3Problem3():
     st.subheader('3) Profitability Index (PI)')
     st.markdown("Calculate the profitability index given the net present value and initial investment of a project.")
     net_present_value = st.number_input('Enter the net present value', value=1)
@@ -79,11 +79,11 @@ def Topic1Problem3():
 
     st.write(res)
 
-Topic1Problem3()
+Topic3Problem3()
 
 #Problem 4 - Internal Rate of Return
 
-def Topic1Problem4():
+def Topic3Problem4():
     st.subheader('4) Internal Rate of Return (IRR)')
     st.markdown("Calculate the internal rate of return given the initial investment, time period, "
                 "interest rate and cash flow for each period.")
@@ -108,5 +108,5 @@ def Topic1Problem4():
 
     st.write(res)
 
-Topic1Problem4()
+Topic3Problem4()
 
