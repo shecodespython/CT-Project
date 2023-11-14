@@ -1,13 +1,11 @@
 import streamlit as st
-import subprocess
-
 
 st.set_page_config(
     page_title="Finance Calculator - Statistics",
     page_icon="💰",
 )
 
-st.title("📊 Statistics Page")
+st.title("📊 Statistics")
 
 with open('main_style.css') as f:
     css = f.read()

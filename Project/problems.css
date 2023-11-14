@@ -19,6 +19,22 @@ div.st-emotion-cache-keje6w:nth-child(1) > div:nth-child(1) > div:nth-child(1) >
 div.element-container:nth-child(n) > div:nth-child(1) > button:nth-child(1){
     background-color: #b46382;
     border-radius: 0px;
+    margin-left: 50px;
+}
+
+div.element-container:nth-child(n) > div:nth-child(1) > button:nth-child(1):focus:not(:active){
+    color: #fd9664;
+    border: none;
+}
+
+div.element-container:nth-child(n) > div:nth-child(1) > button:nth-child(1):focus(:active){
+    color: #fd9664;
+    border: none;
+}
+
+div.element-container:nth-child(n) > div:nth-child(1) > button:nth-child(1):hover{
+    color: #fd9664;
+    border: none;
 }
 
 div.element-container:nth-child(n) > div:nth-child(1) > button:nth-child(1) > div:nth-child(1) > p:nth-child(1){

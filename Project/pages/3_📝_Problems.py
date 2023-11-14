@@ -6,7 +6,7 @@ st.set_page_config(
     page_icon="💰",
 )
 
-st.title("📝 Problems Page")
+st.title("📝 Problems")
 
 
 with open('main_style.css') as f:
@@ -23,47 +23,32 @@ st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 def run_streamlit_app(file_path):
     subprocess.run(["streamlit", "run", file_path])
 
-st.write("Please select a problem: ")
+st.write("Please select a problem topic: ")
 
 col1, col2 = st.columns(2)
 
 
 with col1:
-    st.write("1. Seminar - Title")
-    st.write("2. Seminar - Title")
-    st.write("3. Seminar - Title")
-    st.write("4. Seminar - Title")
-    st.write("5. Seminar - Title")
-    st.write("6. Seminar - Title")
-    st.write("7. Seminar - Title")
-    st.write("8. Seminar - Title")
-    st.write("9. Seminar - Title")
-    st.write("10. Seminar - Title")
-    st.write("11. Seminar - Title")
-    st.write("12. Seminar - Title")
+    st.write("1. Topic - PV, FV and NPV")
+    st.write("2. Topic - NPV Competitors")
+    st.write("3. Topic - Investment Decisions")
+    st.write("4. Topic - Dividend Policy")
+    st.write("5. Topic - Credit Policy")
+    st.write("6. Topic - WACC, CAPM and Tax Savings")
+    st.write("7. Topic - Commercial Credit Policy and Inventory Management")
 
 with col2:
-    if st.button("Problem 1"):
-        run_streamlit_app("Problem_1.py")
-    elif st.button("Problem 2"):
-        run_streamlit_app("Problem_2.py")
-    elif st.button("Problem 3"):
-        run_streamlit_app("Problem_3.py")
-    elif st.button("Problem 4"):
-        run_streamlit_app("Problem_4.py")
-    elif st.button("Problem 5"):
-        run_streamlit_app("Problem_5.py")
-    elif st.button("Problem 6"):
-        run_streamlit_app("Problem_6.py")
-    elif st.button("Problem 7"):
-        run_streamlit_app("Problem_7.py")
-    elif st.button("Problem 8"):
-        run_streamlit_app("Problem_8.py")
-    elif st.button("Problem 9"):
-        run_streamlit_app("Problem_9.py")
-    elif st.button("Problem 10"):
-        run_streamlit_app("Problem_10.py")
-    elif st.button("Problem 11"):
-        run_streamlit_app("Problem_11.py")
-    elif st.button("Problem 12"):
-        run_streamlit_app("Problem_12.py")  
+    if st.button("Topic 1"):
+        run_streamlit_app("Topic_1.py")
+    elif st.button("Topic 2"):
+        run_streamlit_app("Topic_2.py")
+    elif st.button("Topic 3"):
+        run_streamlit_app("Topic_3.py")
+    elif st.button("Topic 4"):
+        run_streamlit_app("Topic_4.py")
+    elif st.button("Topic 5"):
+        run_streamlit_app("Topic_5.py")
+    elif st.button("Topic 6"):
+        run_streamlit_app("Topic_6.py")
+    elif st.button("Topic 7"):
+        run_streamlit_app("Topic_7.py")

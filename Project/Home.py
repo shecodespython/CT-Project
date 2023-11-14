@@ -1,5 +1,4 @@
 import streamlit as st
-import subprocess
 
 
 st.set_page_config(
@@ -7,7 +6,7 @@ st.set_page_config(
     page_icon="💰",
 )
 
-st.title("Home Page")
+st.title("Homepage")
 
 #Using CSS file
 with open('main_style.css') as f:
@@ -15,4 +14,5 @@ with open('main_style.css') as f:
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
-st.subheader("Welocme to Finance Calculator")
+st.subheader("Welcome to the Finance Calculator")
+
